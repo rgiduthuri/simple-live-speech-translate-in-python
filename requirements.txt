@@ -1,0 +1,15 @@
+# Core: live transcription
+mlx-whisper
+faster-whisper
+sounddevice
+numpy
+
+# indic-conformer backend + en->indic translation + TTS
+# transformers pinned: v5 breaks IndicTransToolkit, >=4.5x breaks
+# IndicTrans2's custom modeling code (KV-cache API change), and
+# parler-tts requires exactly 4.46.1.
+transformers==4.46.1
+torchaudio
+sentencepiece
+IndicTransToolkit
+parler-tts
